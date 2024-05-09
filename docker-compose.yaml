@@ -1,9 +1,6 @@
 version: "2"
 services:
-  node_app:
-    image: kirubha2020/myapp:version$BUILD_NUMBER
-    container_name: my_node_app
-    restart: always
-    ports:
-      - "3000:3000"
-    command: npm start
+  web:
+    image: kirubha2020/myapp:latest
+    network_mode: "host"        
+    restart: on-failure
