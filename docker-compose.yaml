@@ -1,5 +1,5 @@
-services:
-  web:
+version: "2.27.0"
+services:  web:
     image: kirubha2020/myapp:version$BUILD_NUMBER
     network_mode: "host"        
     restart: on-failure
