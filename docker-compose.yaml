@@ -1,4 +1,4 @@
-version: "2.27.0"
+version: "2"
 services:
   node_app:
     image: kirubha2020/myapp:version$BUILD_NUMBER
